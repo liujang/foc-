@@ -1,17 +1,17 @@
 {
     "server": "0.0.0.0",
     "server_ipv6": "::",
-    "server_port": 8388,
+    "server_port": 443,
     "local_address": "127.0.0.1",
     "local_port": 1080,
 
     "password": "m",
     "timeout": 120,
     "udp_timeout": 60,
-    "method": "aes-256-cfb",
-    "protocol": "auth_aes128_md5",
+    "method": "none",
+    "protocol": "auth_chain_a",
     "protocol_param": "",
-    "obfs": "tls1.2_ticket_auth_compatible",
+    "obfs": "tls1.2_ticket_auth",
     "obfs_param": "",
     "speed_limit_per_con": 0,
 
@@ -19,7 +19,7 @@
     "dns_ipv6": false,
     "connect_verbose_info": 0,
     "connect_hex_data": 0,
-    "redirect": "",
+    "redirect": ["*:443#127.0.0.1:2333"],
     "fast_open": true,
     "friendly_detect": 1
 }
